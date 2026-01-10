@@ -12,7 +12,8 @@ function Hero() {
           <div>
             <h1 className={styles.title}>Task Force Canada (TFC)</h1>
             <p className={styles.subtitle}>
-              Canadian Armed Forces realism & conceptual assets for Arma 3.
+              Task Force Canada is a small mod team based mostly in Canada, developing the Canadian Armed Forces – 
+              Task Force Canada mod for the Bohemia Interactive military simulator ArmA 3.
             </p>
             <div className={styles.ctas}>
               <Link className="button button--primary button--lg" to="/docs/install">
