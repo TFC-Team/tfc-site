@@ -16,9 +16,14 @@ function Hero() {
               Task Force Canada mod for the Bohemia Interactive military simulator ArmA 3.
             </p>
             <div className={styles.ctas}>
-              <Link className="button button--primary button--lg" to="/docs/install">
-                Install
-              </Link>
+              <a
+                className="button button--primary button--lg"
+                href="https://steamcommunity.com/sharedfiles/filedetails/?id=2770837222 "
+                target="_blank"
+                rel="noreferrer"
+              >
+                Steam Workshop
+              </a>
               <Link className="button button--secondary button--lg" to="/showcase">
                 Mod Showcase
               </Link>
