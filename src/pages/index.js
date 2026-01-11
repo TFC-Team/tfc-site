@@ -24,7 +24,15 @@ function Hero() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Steam Workshop
+                Steam Workshop - live
+              </a>
+              <a
+                className="button button--primary button--lg"
+                href="https://steamcommunity.com/sharedfiles/filedetails/?id=3408204520 "
+                target="_blank"
+                rel="noreferrer"
+              >
+                Steam Workshop - beta
               </a>
               <Link className="button button--secondary button--lg" to="/showcase">
                 Mod Showcase
