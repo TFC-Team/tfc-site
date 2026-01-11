@@ -2,13 +2,15 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 function Hero() {
   return (
     <header className={styles.hero}>
       <div className="container">
         <div className={styles.heroInner}>
-          <img className={styles.logo} src="/img/tfc-logo.png" alt="TFC logo" />
+          <img className={styles.logo} src={useBaseUrl('/img/tfc-logo.png')} alt="TFC logo" />
           <div>
             <h1 className={styles.title}>Task Force Canada (TFC)</h1>
             <p className={styles.subtitle}>
