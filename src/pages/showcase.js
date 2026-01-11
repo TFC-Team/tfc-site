@@ -2,6 +2,8 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import styles from './showcase.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+
 
 const items = [
   { title: 'Armoured Vehicles', desc: 'LAV family, tracked platforms, and supporting vehicles.', img: '/img/tfc_ca_leo24m_tw_ca.png', to: '/docs/showcase/armour' },
@@ -13,7 +15,7 @@ const items = [
 function Card({title, desc, img, to}) {
   return (
     <div className={styles.card}>
-      <div className={styles.thumb} style={{backgroundImage: `url(${img})`}} />
+      <div className={styles.thumb} style={{backgroundImage: `url(${useBaseUrl(img)})`}} />
       <div className={styles.body}>
         <h3>{title}</h3>
         <p>{desc}</p>
