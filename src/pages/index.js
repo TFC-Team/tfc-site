@@ -32,7 +32,7 @@ function Hero() {
               </Link>
             </div>
             <div className={styles.quickLinks}>
-              <a href="https://discord.gg/tz9p95qA" target="_blank" rel="noreferrer">Join Discord</a>
+              <a href="https://discord.gg/yUGHuwekmP" target="_blank" rel="noreferrer">Join Discord</a>
               <span>•</span>
               <a href="https://github.com/TFC-Team" target="_blank" rel="noreferrer">GitHub</a>
             </div>
