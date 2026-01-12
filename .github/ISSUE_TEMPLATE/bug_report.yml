@@ -1,13 +1,3 @@
-- type: markdown
-  attributes:
-    value: |
-      ⚠️ **GitHub account required**
-      
-      TFC uses GitHub Issues to track bugs and fixes properly.
-      This allows us to ask follow-up questions and link fixes to releases.
-      
-      👉 For general help or setup questions, please use our Discord instead.
-
 name: 🐞 Bug Report
 description: Report a bug or malfunction in Task Force Canada (TFC)
 title: "[BUG] "
@@ -16,12 +6,15 @@ labels:
   - needs-triage
 
 body:
-  - type: markdown
+    - type: markdown
     attributes:
       value: |
-        ## Task Force Canada — Bug Report
-        Please provide accurate and complete information.
-        Incomplete reports may be returned for clarification.
+        ⚠️ **GitHub account required**
+        
+        TFC uses GitHub Issues to track bugs and fixes properly.
+        This allows us to ask follow-up questions and link fixes to releases.
+        
+        👉 For general help or setup questions, please use our Discord instead.
 
   - type: dropdown
     id: affected_category
