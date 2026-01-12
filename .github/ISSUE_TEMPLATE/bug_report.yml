@@ -3,6 +3,7 @@ description: Report a bug or malfunction in Task Force Canada (TFC)
 title: "[BUG] "
 labels:
   - bug
+  - needs-triage
 
 body:
   - type: markdown
