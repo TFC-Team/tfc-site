@@ -30,6 +30,26 @@ body:
     validations:
       required: true
 
+    - type: dropdown
+    id: mod_pack
+    attributes:
+      label: TFC Mod Pack
+      description: Which TFC mod is affected?
+      options:
+        - TFC_CORE
+        - TFC_RCN
+        - TFC_CA
+        - TFC_RCAF
+        - TFC_SF
+        - ACE_Compat_TFC_CORE
+        - ACE_Compat_TFC_RCN
+        - ACE_Compat_TFC_CA
+        - ACE_Compat_TFC_RCAF
+        - ACE_Compat_TFC_SF
+        - Unknown / Not sure
+    validations:
+      required: true
+
   - type: input
     id: asset
     attributes:
@@ -95,12 +115,12 @@ body:
     validations:
       required: true
 
-  - type: input
-    id: version
+    - type: input
+    id: mod_version
     attributes:
-      label: TFC Mod Version
-      description: Version number or Workshop update date
-      placeholder: "v1.5.0 / Updated 2026-01-10"
+      label: Mod Version
+      description: Version of the selected mod pack (e.g., 0.9.9.6)
+      placeholder: "Example: 0.9.9.6"
     validations:
       required: true
 
@@ -111,12 +131,13 @@ body:
       description: Paste relevant RPT output or attach files
       render: shell
 
-  - type: checkboxes
+    - type: checkboxes
     id: confirmation
     attributes:
       label: Confirmation
       options:
-        - label: I am using the latest TFC mod version
+        - label: I am using the latest version of the selected mod pack
           required: true
         - label: I have checked for duplicate issues
           required: true
+
