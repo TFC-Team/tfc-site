@@ -34,6 +34,12 @@ function Hero() {
               >
                 Steam Workshop - beta
               </a>
+              <Link
+                className="button button--danger button--lg"
+                href="https://github.com/TFC-Team/tfc-site/issues/new/choose"
+              >
+              🐞 Report Mod Issue
+              </Link>
               <Link className="button button--secondary button--lg" to="/showcase">
                 Mod Showcase
               </Link>
