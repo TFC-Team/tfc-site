@@ -6,7 +6,7 @@ labels:
   - needs-triage
 
 body:
-    - type: markdown
+  - type: markdown
     attributes:
       value: |
         ⚠️ **GitHub account required**
