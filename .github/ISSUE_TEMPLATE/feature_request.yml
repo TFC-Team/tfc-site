@@ -1,0 +1,43 @@
+name: "Feature Request"
+description: "Suggest a new feature, asset, or improvement."
+title: "[FEATURE] "
+labels: ["enhancement", "triage"]
+body:
+  - type: dropdown
+    id: type
+    attributes:
+      label: Request type
+      options:
+        - New vehicle/aircraft
+        - New weapon/system
+        - New gear/uniform
+        - Improvement to existing content
+        - Documentation request
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: request
+    attributes:
+      label: What do you want to see?
+      placeholder: "Describe the feature clearly."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this valuable?
+      placeholder: "Gameplay / realism / usability impact."
+    validations:
+      required: true
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Links/images/docs that support the request.
+      placeholder: "Optional links or images."
+    validations:
+      required: false
