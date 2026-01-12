@@ -1,3 +1,13 @@
+- type: markdown
+  attributes:
+    value: |
+      ⚠️ **GitHub account required**
+      
+      TFC uses GitHub Issues to track bugs and fixes properly.
+      This allows us to ask follow-up questions and link fixes to releases.
+      
+      👉 For general help or setup questions, please use our Discord instead.
+
 name: 🐞 Bug Report
 description: Report a bug or malfunction in Task Force Canada (TFC)
 title: "[BUG] "
