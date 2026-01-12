@@ -1,4 +1,4 @@
-name: Bug Report
+name: 🐞 Bug Report
 description: Report a bug or malfunction in Task Force Canada (TFC)
 title: "[BUG] "
 labels:
@@ -55,7 +55,7 @@ body:
     attributes:
       label: Mod Version
       description: Version of the selected mod pack (example: 0.9.9.6)
-      placeholder: "Example: 0.9.9.6"
+      placeholder: 'Example: 0.9.9.6'
     validations:
       required: true
 
