@@ -1,4 +1,4 @@
-name: 🐞 Bug Report
+name: Bug Report
 description: Report a bug or malfunction in Task Force Canada (TFC)
 title: "[BUG] "
 labels:
@@ -9,12 +9,12 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## Task Force Canada – Bug Report
+        ## Task Force Canada — Bug Report
         Please provide accurate and complete information.
-        Incomplete reports may be closed or returned for clarification.
+        Incomplete reports may be returned for clarification.
 
   - type: dropdown
-    id: category
+    id: affected_category
     attributes:
       label: Affected Category
       description: What type of asset is affected?
@@ -30,7 +30,7 @@ body:
     validations:
       required: true
 
-    - type: dropdown
+  - type: dropdown
     id: mod_pack
     attributes:
       label: TFC Mod Pack
@@ -51,11 +51,20 @@ body:
       required: true
 
   - type: input
-    id: asset
+    id: mod_version
+    attributes:
+      label: Mod Version
+      description: Version of the selected mod pack (example: 0.9.9.6)
+      placeholder: "Example: 0.9.9.6"
+    validations:
+      required: true
+
+  - type: input
+    id: asset_name
     attributes:
       label: Asset Name
-      description: Exact in-game asset or classname if known
-      placeholder: "LAV 6.0 IFV / CH-146 Griffon / AGM-114R"
+      description: Exact in-game asset name or classname if known
+      placeholder: "Example: LAV 6.0 IFV / tfc_lav6 / CH-146 Griffon / AGM-114R"
     validations:
       required: true
 
@@ -65,10 +74,10 @@ body:
       label: Severity
       description: Impact on gameplay or stability
       options:
-        - Critical – Crash / Game breaking
-        - Major – Severely impacts use
-        - Moderate – Usable with issues
-        - Minor – Cosmetic / visual
+        - Critical — Crash / Game breaking
+        - Major — Severely impacts use
+        - Moderate — Usable with issues
+        - Minor — Cosmetic / Visual
     validations:
       required: true
 
@@ -87,20 +96,20 @@ body:
       required: true
 
   - type: textarea
-    id: description
+    id: bug_description
     attributes:
       label: Bug Description
       description: Clearly describe what is happening
-      placeholder: "Describe the issue in detail"
+      placeholder: "Describe the issue in detail…"
     validations:
       required: true
 
   - type: textarea
-    id: steps
+    id: steps_to_reproduce
     attributes:
       label: Steps to Reproduce
-      description: Provide clear steps to reproduce the issue
-      placeholder: |
+      description: Provide clear steps so we can reproduce the issue
+      value: |
         1. Spawn asset
         2. Enter driver seat
         3. Activate system
@@ -108,30 +117,39 @@ body:
       required: true
 
   - type: textarea
-    id: expected
+    id: expected_behavior
     attributes:
       label: Expected Behaviour
       description: What should happen instead?
-    validations:
-      required: true
-
-    - type: input
-    id: mod_version
-    attributes:
-      label: Mod Version
-      description: Version of the selected mod pack (e.g., 0.9.9.6)
-      placeholder: "Example: 0.9.9.6"
+      placeholder: "Expected result…"
     validations:
       required: true
 
   - type: textarea
-    id: rpt
+    id: environment
+    attributes:
+      label: Environment
+      description: Helpful details (fill what you can)
+      value: |
+        - Game: Arma 3 (version/build):
+        - Singleplayer or Multiplayer:
+        - Server host (Dedicated / Local / Hosted):
+        - Mods loaded (besides TFC):
+        - ACE enabled? (Yes/No):
+        - Repro on vanilla mission? (Yes/No):
+    validations:
+      required: false
+
+  - type: textarea
+    id: rpt_logs
     attributes:
       label: RPT / Logs
-      description: Paste relevant RPT output or attach files
-      render: shell
+      description: Paste relevant RPT output or attach files (screenshots/video also welcome)
+      placeholder: "Paste logs here or attach files…"
+    validations:
+      required: false
 
-    - type: checkboxes
+  - type: checkboxes
     id: confirmation
     attributes:
       label: Confirmation
@@ -140,4 +158,3 @@ body:
           required: true
         - label: I have checked for duplicate issues
           required: true
-
