@@ -1,125 +1,121 @@
-name: "Bug Report"
-description: "Report a bug in Task Force Canada (TFC)."
+name: 🐞 Bug Report
+description: Report a bug or malfunction in Task Force Canada (TFC)
 title: "[BUG] "
-labels: ["bug", "triage"]
+labels:
+  - bug
+
 body:
   - type: markdown
     attributes:
       value: |
-        Thanks for reporting! Please fill this out carefully — it helps us fix issues faster.
-        **Support**: For questions/help, use Discord. For actionable defects, use this form.
+        ## Task Force Canada – Bug Report
+        Please provide accurate and complete information.
+        Incomplete reports may be closed or returned for clarification.
 
   - type: dropdown
-    id: area
+    id: category
     attributes:
-      label: Area / Module
-      description: What part of TFC is affected?
+      label: Affected Category
+      description: What type of asset is affected?
       options:
-        - Armoured vehicles
-        - Aircraft
-        - Weapons & systems
-        - Gear & uniforms
-        - Logistics / support vehicles
-        - Audio
-        - UI / interactions (ACE, actions, etc.)
-        - Other / Unknown
+        - Armoured Vehicle
+        - Aircraft (Rotary)
+        - Aircraft (Fixed Wing)
+        - Weapon / Weapon System
+        - Sensor / Electronics
+        - Gear / Uniform
+        - Script / Framework
+        - Other
     validations:
       required: true
 
   - type: input
-    id: tfc_version
+    id: asset
     attributes:
-      label: TFC version
-      description: "What version of TFC are you running? (e.g., Workshop build date, tag, release name)"
-      placeholder: "Example: Steam Workshop - updated 2026-01-10"
+      label: Asset Name
+      description: Exact in-game asset or classname if known
+      placeholder: "LAV 6.0 IFV / CH-146 Griffon / AGM-114R"
     validations:
       required: true
 
-  - type: input
-    id: arma_version
+  - type: dropdown
+    id: severity
     attributes:
-      label: Arma 3 version
-      placeholder: "Example: 2.16.x"
+      label: Severity
+      description: Impact on gameplay or stability
+      options:
+        - Critical – Crash / Game breaking
+        - Major – Severely impacts use
+        - Moderate – Usable with issues
+        - Minor – Cosmetic / visual
     validations:
       required: true
 
-  - type: textarea
-    id: modlist
+  - type: dropdown
+    id: reproducibility
     attributes:
-      label: Mod list / preset (important)
-      description: Paste your mod list or a link to your launcher preset. Include CBA/ACE/ACRE if used.
-      placeholder: "Paste mod list here (or launcher preset link)."
+      label: Reproducibility
+      description: How often does this occur?
+      options:
+        - Always
+        - Often
+        - Sometimes
+        - Rarely
+        - Unable to reproduce
     validations:
       required: true
 
   - type: textarea
     id: description
     attributes:
-      label: What happened?
-      description: Describe the problem clearly.
-      placeholder: "Example: LAV6 commander cannot access pintle when turned-in..."
+      label: Bug Description
+      description: Clearly describe what is happening
+      placeholder: "Describe the issue in detail"
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Provide clear steps to reproduce the issue
+      placeholder: |
+        1. Spawn asset
+        2. Enter driver seat
+        3. Activate system
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: What did you expect to happen?
-      placeholder: "Example: Commander should retain original seat reservation when using pintle."
+      label: Expected Behaviour
+      description: What should happen instead?
     validations:
       required: true
 
-  - type: textarea
-    id: repro
+  - type: input
+    id: version
     attributes:
-      label: Steps to reproduce
-      description: Numbered steps are best.
-      placeholder: |
-        1) Start mission with TFC + ACE
-        2) Spawn LAV6
-        3) Turn commander out
-        4) Select pintle
-        5) Observe...
-    validations:
-      required: true
-
-  - type: dropdown
-    id: frequency
-    attributes:
-      label: Frequency
-      options:
-        - Always
-        - Often
-        - Sometimes
-        - Rare
-        - Only happened once
+      label: TFC Mod Version
+      description: Version number or Workshop update date
+      placeholder: "v1.5.0 / Updated 2026-01-10"
     validations:
       required: true
 
   - type: textarea
     id: rpt
     attributes:
-      label: RPT / logs
-      description: Drag & drop your RPT or paste the relevant excerpt (errors, warnings).
-      placeholder: "Paste key RPT lines or attach the full file."
-    validations:
-      required: false
-
-  - type: textarea
-    id: media
-    attributes:
-      label: Screenshots / video
-      description: Drag & drop images/video or link to a clip.
-      placeholder: "Optional, but very helpful."
-    validations:
-      required: false
+      label: RPT / Logs
+      description: Paste relevant RPT output or attach files
+      render: shell
 
   - type: checkboxes
-    id: checklist
+    id: confirmation
     attributes:
-      label: Checklist
+      label: Confirmation
       options:
-        - label: "I can reproduce this issue using the steps above."
+        - label: I am using the latest TFC mod version
           required: true
-        - label: "I included my mod list/preset."
+        - label: I have checked for duplicate issues
           required: true
