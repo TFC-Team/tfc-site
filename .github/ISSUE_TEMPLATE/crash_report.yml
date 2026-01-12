@@ -1,0 +1,64 @@
+name: "Crash / Hard Error"
+description: "Report crashes, startup failures, and serious script/config errors."
+title: "[CRASH] "
+labels: ["crash", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for CTDs, startup failures, missing PBO/signature issues, or persistent script/config errors.
+
+  - type: input
+    id: tfc_version
+    attributes:
+      label: TFC version
+      placeholder: "Steam Workshop updated 2026-01-10"
+    validations:
+      required: true
+
+  - type: textarea
+    id: error_text
+    attributes:
+      label: Exact error message(s)
+      description: Copy/paste the exact message from Arma/launcher/RPT.
+      placeholder: "Paste error text here."
+    validations:
+      required: true
+
+  - type: textarea
+    id: modlist
+    attributes:
+      label: Mod list / preset
+      placeholder: "Paste full mod list or preset link."
+    validations:
+      required: true
+
+  - type: textarea
+    id: rpt
+    attributes:
+      label: RPT file (required)
+      description: Drag & drop the full RPT file here.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: What were you doing when it crashed?
+      placeholder: |
+        - Mission/map:
+        - Vehicle/asset used:
+        - Multiplayer/Singleplayer:
+        - Approx time into mission:
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: "I attached the full RPT."
+          required: true
+        - label: "I included the full mod list/preset."
+          required: true
