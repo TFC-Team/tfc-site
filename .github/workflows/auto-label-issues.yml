@@ -1,0 +1,67 @@
+name: Auto-label issues from TFC forms
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  issues: write
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply labels based on issue form fields
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const issue = context.payload.issue;
+            const body = issue.body || "";
+
+            // Only run for Bug Reports (we identify by title prefix)
+            // You can change this to a different rule if you want.
+            if (!issue.title.startsWith("[BUG]")) {
+              return;
+            }
+
+            // Helpers
+            function pickAfter(label) {
+              // Matches markdown like:
+              // "### Severity\n\nCritical – Crash / Game breaking"
+              const re = new RegExp(`###\\s+${label}\\s*\\n\\n([^\\n]+)`, "i");
+              const m = body.match(re);
+              return m ? m[1].trim() : "";
+            }
+
+            const category = pickAfter("Affected Category");
+            const severity = pickAfter("Severity");
+
+            const labelsToAdd = new Set();
+
+            // Always add these
+            labelsToAdd.add("bug");
+            labelsToAdd.add("needs-triage");
+
+            // Severity mapping (matches the exact option text you used)
+            if (severity.startsWith("Critical")) labelsToAdd.add("severity:critical");
+            else if (severity.startsWith("Major")) labelsToAdd.add("severity:major");
+            else if (severity.startsWith("Moderate")) labelsToAdd.add("severity:moderate");
+            else if (severity.startsWith("Minor")) labelsToAdd.add("severity:minor");
+
+            // Category mapping
+            if (category === "Armoured Vehicle") labelsToAdd.add("cat:armour");
+            else if (category === "Aircraft (Rotary)") labelsToAdd.add("cat:air-rotary");
+            else if (category === "Aircraft (Fixed Wing)") labelsToAdd.add("cat:air-fixed");
+            else if (category === "Weapon / Weapon System") labelsToAdd.add("cat:weapon");
+            else if (category === "Sensor / Electronics") labelsToAdd.add("cat:sensor");
+            else if (category === "Gear / Uniform") labelsToAdd.add("cat:gear");
+            else if (category === "Script / Framework") labelsToAdd.add("cat:script");
+            else if (category) labelsToAdd.add("cat:other");
+
+            // Apply labels
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issue.number,
+              labels: Array.from(labelsToAdd),
+            });
