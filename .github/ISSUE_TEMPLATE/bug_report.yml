@@ -1,0 +1,125 @@
+name: "Bug Report"
+description: "Report a bug in Task Force Canada (TFC)."
+title: "[BUG] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please fill this out carefully — it helps us fix issues faster.
+        **Support**: For questions/help, use Discord. For actionable defects, use this form.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area / Module
+      description: What part of TFC is affected?
+      options:
+        - Armoured vehicles
+        - Aircraft
+        - Weapons & systems
+        - Gear & uniforms
+        - Logistics / support vehicles
+        - Audio
+        - UI / interactions (ACE, actions, etc.)
+        - Other / Unknown
+    validations:
+      required: true
+
+  - type: input
+    id: tfc_version
+    attributes:
+      label: TFC version
+      description: "What version of TFC are you running? (e.g., Workshop build date, tag, release name)"
+      placeholder: "Example: Steam Workshop - updated 2026-01-10"
+    validations:
+      required: true
+
+  - type: input
+    id: arma_version
+    attributes:
+      label: Arma 3 version
+      placeholder: "Example: 2.16.x"
+    validations:
+      required: true
+
+  - type: textarea
+    id: modlist
+    attributes:
+      label: Mod list / preset (important)
+      description: Paste your mod list or a link to your launcher preset. Include CBA/ACE/ACRE if used.
+      placeholder: "Paste mod list here (or launcher preset link)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the problem clearly.
+      placeholder: "Example: LAV6 commander cannot access pintle when turned-in..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      placeholder: "Example: Commander should retain original seat reservation when using pintle."
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps are best.
+      placeholder: |
+        1) Start mission with TFC + ACE
+        2) Spawn LAV6
+        3) Turn commander out
+        4) Select pintle
+        5) Observe...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Frequency
+      options:
+        - Always
+        - Often
+        - Sometimes
+        - Rare
+        - Only happened once
+    validations:
+      required: true
+
+  - type: textarea
+    id: rpt
+    attributes:
+      label: RPT / logs
+      description: Drag & drop your RPT or paste the relevant excerpt (errors, warnings).
+      placeholder: "Paste key RPT lines or attach the full file."
+    validations:
+      required: false
+
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots / video
+      description: Drag & drop images/video or link to a clip.
+      placeholder: "Optional, but very helpful."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: "I can reproduce this issue using the steps above."
+          required: true
+        - label: "I included my mod list/preset."
+          required: true
