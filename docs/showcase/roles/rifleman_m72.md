@@ -26,6 +26,7 @@ Infantry Section Commander equipped for general-purpose combat.
 ![Rifleman MT](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
 
 ---
+
 ## Loadout / Spawn Equipment
 - C7A2 Rifle
 - 6× STANAG Magazines
