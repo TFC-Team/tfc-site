@@ -3,27 +3,27 @@ title: Rifleman
 ---
 
 ## Overview
-![Rifleman MT](/img/tfc_ca/roles/rifleman_mt.png)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
 
-Standard infantry rifleman equipped for general-purpose combat.
+Infantry Section Commander equipped for general-purpose combat.
 
 ---
 
-## Available Categories
+## OTHER VARIANTS
 | Category | Preview |
 |--------|--------|
-| OTW | ![](/img/tfc_ca/camo/otw_mt.png) |
-| Tunic | ![](/img/tfc_ca/camo/tunic_mt.png) |
-| Parka | ![](/img/tfc_ca/camo/parka_mt.png) |
+| OTW | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
+| Tunic | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
+| Parka 1 | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
 
 ---
 
 ## CAMO Variants
-- Temperate Woodland (TW)
-- Arid (AR)
-- Multi-Terrain (MT)
-- Winter Ops (WO)
-- Winter Ops mixed with TW (WOTW)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
 
 ---
 
@@ -46,5 +46,5 @@ Standard infantry rifleman equipped for general-purpose combat.
 ---
 
 ## Notes
-- Backbone of infantry sections
+- Leader of infantry sections
 - Compatible with ACE Medical & Logistics
