@@ -22,12 +22,16 @@ body:
       label: Affected Category
       description: What type of asset is affected?
       options:
-        - Armoured Vehicle
+        - Non-Armoured Vehicles
+        - Armoured Vehicles
         - Aircraft (Rotary)
-        - Aircraft (Fixed Wing)
-        - Weapon / Weapon System
+        - Aircraft (Fixed Wings)
+        - Aircraft (Fighter)
+        - Aircraft (Drone)
+        - Weapons / Weapons System
         - Sensor / Electronics
-        - Gear / Uniform
+        - Gear / Uniforms
+        - Terrain / Map
         - Script / Framework
         - Other
     validations:
@@ -44,6 +48,7 @@ body:
         - TFC_CA
         - TFC_RCAF
         - TFC_SF
+        - Canadian Forces Base Moosehead
         - ACE_Compat_TFC_CORE
         - ACE_Compat_TFC_RCN
         - ACE_Compat_TFC_CA
