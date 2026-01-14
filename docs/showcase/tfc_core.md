@@ -1,5 +1,5 @@
 ---
-title: Weapons & Systems
+title: TFC_CORE
 ---
 
 # Weapons & Systems
