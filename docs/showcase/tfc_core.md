@@ -1,6 +1,8 @@
 ---
+id: tfc_core
 title: TFC_CORE
 ---
+
 
 # Weapons & Systems
 
