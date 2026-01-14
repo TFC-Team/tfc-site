@@ -3,7 +3,6 @@ id: tfc_ca
 title: TFC_CA
 ---
 
-
 # Characters
 
 Add screenshots and “how to use” notes for each platform.
