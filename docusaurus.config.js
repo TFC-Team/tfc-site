@@ -7,8 +7,8 @@ module.exports = {
   favicon: 'img/tfc-logo.png',
 
   // Update for final deployment:
-  url: 'https://tfc-team.github.io',
-  baseUrl: '/tfc-site/',
+  url: 'https://taskforcecanada.ca',
+  baseUrl: '/',
 
   organizationName: 'TFC-Team',
   projectName: 'tfc-site',
