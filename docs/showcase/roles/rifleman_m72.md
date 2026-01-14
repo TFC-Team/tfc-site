@@ -3,7 +3,7 @@ title: Rifleman LAT
 ---
 
 ## Overview
-![Rifleman MT](/img/tfc_ca/camo/section_ic_mt.png)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
 
 Infantry Section Commander equipped for general-purpose combat.
 
@@ -12,18 +12,18 @@ Infantry Section Commander equipped for general-purpose combat.
 ## OTHER VARIANTS
 | Category | Preview |
 |--------|--------|
-| OTW | ![](/img/tfc_ca/camo/section_ic_otw_mt.png) |
-| Tunic | ![](/img/tfc_ca/camo/section_ic_tunic_mt.png) |
-| Parka 1 | ![](/img/tfc_ca/camo/section_ic_parka_wo.png) |
+| OTW | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
+| Tunic | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
+| Parka 1 | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
 
 ---
 
 ## CAMO Variants
-![Rifleman MT](/img/tfc_ca/camo/section_ic_tunic_mt.png)
-![Rifleman MT](/img/tfc_ca/camo/section_ic_tunic_tw.png)
-![Rifleman MT](/img/tfc_ca/camo/section_ic_tunic_ar.png)
-![Rifleman MT](/img/tfc_ca/camo/section_ic_tunic_wo.png)
-![Rifleman MT](/img/tfc_ca/camo/section_ic_tunic_wotw.png)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
 
 ---
 
