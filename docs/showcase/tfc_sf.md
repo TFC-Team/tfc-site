@@ -2,7 +2,7 @@
 title: TFC_SF
 ---
 
-# Armour
+# SOF
 
 Add screenshots and “how to use” notes for each platform.
 
