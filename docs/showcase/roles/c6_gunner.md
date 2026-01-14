@@ -3,7 +3,7 @@ title: C6 Gunner
 ---
 
 ## Overview
-![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/img/tfc_soldier_army_c6_ar_ca.jpg)
 
 Infantry Section Commander equipped for general-purpose combat.
 
@@ -12,18 +12,18 @@ Infantry Section Commander equipped for general-purpose combat.
 ## OTHER VARIANTS
 | Category | Preview |
 |--------|--------|
-| OTW | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
-| Tunic | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
+| OTW | ![](/[img/tfc_soldier_army_c7_ar_ca.jpg)) |
+| Tunic | ![](/img/tfc_soldier_army_c6_ar_ca.jpg) |
 | Parka 1 | ![](/static/img/tfc_soldier_army_c6_ar_ca.jpg) |
 
 ---
 
 ## CAMO Variants
-![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
-![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
-![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
-![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
-![Rifleman MT](/static/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/img/tfc_soldier_army_c6_ar_ca.jpg)
+![Rifleman MT](/img/tfc_soldier_army_c6_ar_ca.jpg)
 
 ---
 
