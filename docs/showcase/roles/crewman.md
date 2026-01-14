@@ -3,7 +3,7 @@ title: Crewman
 ---
 
 ## Overview
-![Rifleman MT](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
 
 Infantry Section Commander equipped for general-purpose combat.
 
@@ -19,11 +19,11 @@ Infantry Section Commander equipped for general-purpose combat.
 ---
 
 ## CAMO Variants
-![Rifleman MT](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
-![Rifleman MT](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
-![Rifleman MT](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
-![Rifleman MT](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
-![Rifleman MT](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
 
 ---
 
