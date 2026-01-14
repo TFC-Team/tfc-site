@@ -6,10 +6,12 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
 const items = [
-  { title: 'Armoured Vehicles', desc: 'LAV family, tracked platforms, and supporting vehicles.', img: '/img/tfc_ca_leo24m_tw_ca.png', to: '/docs/showcase/armour' },
-  { title: 'Aircraft', desc: 'Rotary and fixed-wing platforms, from utility to strike.', img: '/img/tfc_air_cc130_ca.png', to: '/docs/showcase/air' },
-  { title: 'Weapons & Systems', desc: 'Weapon packs, sensors, and supporting systems.', img: '/img/tfc_w_c7a2_m203_x_ca.png', to: '/docs/showcase/weapons' },
-  { title: 'Gear & Uniforms', desc: 'CAF-inspired equipment, uniforms, and loadouts.', img: '/img/tfc_soldier_army_c7_mt_ca.png', to: '/docs/showcase/gear' },
+  { title: 'TFC_CORE', desc: 'TFC Core to all TFC mod packs.', img: '/img/tfc_soldier_army_c7_mt_ca.png', to: '/docs/showcase/tfc_core' },
+  { title: 'TFC_RCAF', desc: 'all CAF aircrafts.', img: '/img/tfc_air_cc130_ca.png', to: '/docs/showcase/tfc_rcaf' },
+  { title: 'TFC_RCN', desc: 'all CAF Navy related stuff.', img: '/img/tfc_w_c7a2_m203_x_ca.png', to: '/docs/showcase/tfc_rcn' },
+  { title: 'TFC_CA', desc: 'all CAF Army related stuff.', img: '/img/tfc_soldier_army_c7_mt_ca.png', to: '/docs/showcase/tfc_ca' },
+  { title: 'TFC_SF', desc: 'all CAF SOF related stuff.', img: '/img/tfc_ca_leo24m_tw_ca.png', to: '/docs/showcase/tfc_sf' },
+  { title: 'TFC_Terrain', desc: 'TFC Maps.', img: '/img/tfc_air_cc130_ca.png', to: '/docs/showcase/tfc_terrain' },
 ];
 
 function Card({title, desc, img, to}) {
