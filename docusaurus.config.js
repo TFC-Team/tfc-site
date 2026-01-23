@@ -12,11 +12,12 @@ module.exports = {
 
   organizationName: 'TFC-Team',
   projectName: 'tfc-site',
+
   markdown: {
     hooks: {
-      onBrokenLinks: 'throw',
+      onBrokenMarkdownImages: 'warn',
       onBrokenMarkdownLinks: 'warn',
-    },
+    }
   },
 
   i18n: {

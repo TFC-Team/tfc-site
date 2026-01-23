@@ -3,7 +3,7 @@ title: Infantry Officer
 ---
 
 ## Overview
-![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg)
 
 Infantry Section Commander equipped for general-purpose combat.
 
@@ -12,18 +12,18 @@ Infantry Section Commander equipped for general-purpose combat.
 ## OTHER VARIANTS
 | Category | Preview |
 |--------|--------|
-| OTW | ![](/static/img/tfc_soldier_army_c7_ar_ca.jpg)) |
-| Tunic | ![](/static/img/tfc_soldier_army_c7_ar_ca.jpg) |
-| Parka 1 | ![](/static/img/tfc_soldier_army_c7_ar_ca.jpg) |
+| OTW | ![](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg)) |
+| Tunic | ![](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg) |
+| Parka 1 | ![](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg) |
 
 ---
 
 ## CAMO Variants
-![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
-![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
-![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
-![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
-![tfc_soldier_army_c7_ar_ca](/static/img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg)
+![tfc_soldier_army_c7_ar_ca](pathname:///img/tfc_soldier_army_c7_ar_ca.jpg)
 
 ---
 
